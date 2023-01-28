@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 68%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* :root{
+
+} */
+
+main{
+    width: 40rem;
+    margin-top: 3rem;
+
+}
+
+/*---------------------
+ Front Screen
+----------------------*/
+
+
+ 
+main #frontscreen{
+    /* height: 45vh; */
+    padding: 3rem 0;
+    border-radius: 20px;
+    background-color: rgb(23, 136, 197);
+    /* width: 40%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px black;
+    /* border: 2px solid red; */
+}
+#frontscreen img {
+    width: 40rem;
+    height: auto;
+}
+#frontscreen h2{
+    font-size: 2.5rem;
+    padding: 20px 0;
+}
+
+#frontscreen .frontbutton{
+    display: flex;
+    flex-direction: column;
+}
+#frontscreen .frontbutton button{
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(
+        rgba(41, 41, 253, 0.769),rgba(51, 35, 179, 0.906),rgb(69, 18, 171)
+    );
+    color: white;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    transition: all .2s;
+}
+#frontscreen .frontbutton button:hover{
+
+    box-shadow: 0 0 10px black;
+}
+
+
+    /*---------------------
+     Actual Game Screen
+    ----------------------*/
+
+    #actualgame{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: rgb(23, 136, 197);
+        box-shadow: 0px 0px 20px black;
+    }
+    #actualgame .newgame button{
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        background-image: linear-gradient(
+            rgba(41, 41, 253, 0.769),rgba(51, 35, 179, 0.906),rgb(69, 18, 171)
+        );
+        color: white;
+        margin: 1rem 0;
+        font-size: 1.7rem;
+        transition: all .2s;
+    }
+    #actualgame .newgame button:hover{
+        box-shadow: 0 0 10px black;
+    }
+    #actualgame input{
+        height: 2.5rem;
+        border-radius: 2px;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid white;
+        color: white;
+        outline: none;
+        padding: 15px;
+        margin: 15px 0;
+        text-align: center;
+
+    }
+    #actualgame input:focus{
+        background-color: yellow;
+        color: black;
+    }
+    #actualgame h3{
+        font-size: 3rem;
+        padding: 10px 0;
+    }
+    #actualgame h5{
+    font-size: 1.4rem;
+    }
+    #actualgame .chances{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+    #actualgame .chances p{
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    @media(max-width: 676px){
+        html{
+            font-size: 50%;
+        }
+    }
+    @media(max-width: 476px){
+        html{
+            font-size: 40%;
+        }
+    }
+    @media(max-width: 376px){
+        html{
+            font-size: 30%;
+        }
+    }

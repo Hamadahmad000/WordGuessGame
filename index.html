@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="onload(), autonumber()">
+    <!-- main Screen Start  -->
+    <main>
+ 
+              <!-- Front Game Screen  -->
+              
+              <div id="frontscreen">
+                  <h2>WelCome To Number Guess Game</h2>
+                  <img src="./images/bg1.jpg" alt="select your mode">
+                  <div class="frontbutton">
+                      <button id="easymode">Easy Mode 10</button>
+                      <button id="hardmode">Hard Mode 5</button>
+                    </div>
+                </div>
+
+                      
+               <!-- Actual Game Screen  -->
+               
+
+         <div id="actualgame">
+          <div class="newgame">
+            <button id="newgame">New Game</button>
+        </div class="resgame">
+        <h3>Guess now</h3>
+        <h5 id="guessedshow">Guess number between 1 to 100</h5>
+        <input type="text" id="input" onchange="inputchange()" placeholder="enter your number">
+        <button onclick="checkres()">Check</button>
+          <div class="chances">
+            <p>Your Entered number is</p>
+            <p>You used  chances</p>
+          </div>
+         </div>
+
+         <!-- main Screen End  -->
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
